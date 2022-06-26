@@ -2122,6 +2122,8 @@ GameObject:
   - component: {fileID: 3399216192294525189}
   - component: {fileID: 3399216192302249825}
   - component: {fileID: 3399216192294912527}
+  - component: {fileID: -4925688735212793537}
+  - component: {fileID: 2419082893452042631}
   m_Layer: 0
   m_Name: FireMage
   m_TagString: Untagged
@@ -2156,7 +2158,7 @@ Animator:
   m_GameObject: {fileID: 3399216192294946085}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ba7f513a199d49745b8a2d939a3c399e, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fc4f0f25a35758240aa8693cc063f0af, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -2179,6 +2181,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _reloadTime: 5
+  _speed: 4
+  fireColumn: {fileID: 699469486707790650, guid: 1fc7c29251c06f9439b66ae4fdea07e4, type: 3}
+  spawnFireColumn: {x: 0, y: -5, z: 2}
+  totalTimeColumn: 5
+--- !u!54 &-4925688735212793537
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3399216192294946085}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &2419082893452042631
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3399216192294946085}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.7062174, z: 1}
+  m_Center: {x: 0, y: 0.87786454, z: 0}
 --- !u!1 &3399216192294946087
 GameObject:
   m_ObjectHideFlags: 0
